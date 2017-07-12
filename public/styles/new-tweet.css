@@ -1,20 +1,32 @@
-.new-tweet {
-  margin: 0 2em 0 2em;
-  padding: 0px 8px 10px 8px;
-  background: #eee;
-  border-radius: 5px;
-  border: 1px solid;
+.new-tweet{
+  background-color: #eee;
+  border: solid rgba(0,0,0, 0.2) 1px;
+  border-radius: 10px;
+  margin: 0 2em;
+  padding: 10px;
+  display: none;
 }
 
-.new-tweet h2 {
-  border-bottom: 1px solid black;
-
+.new-tweet .char-exceeded{
+  color: red;
 }
 
-.new-tweet form textarea {
-  width: 100%;
-}
-
-.counter {
+.new-tweet .counter{
   float: right;
+  padding: 0 5px;
+}
+
+.new-tweet .flash-message{
+  color: red;
+  margin-left: 10px;
+}
+
+.new-tweet h2{
+  margin: 10px 0;
+  border-bottom: solid 1px;
+}
+
+.new-tweet textarea{
+  padding: 5px;
+  width: 100%;
 }

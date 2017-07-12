@@ -1,14 +1,17 @@
 $(function() {
-  $(".new-tweet form").on("keyup", "textarea", function() {
-    let textArea = $(this)
-    let charCount = (140 - (textArea.val().length))
-    let counter = $(this).parent().find('.counter')
-    counter.text(charCount)
-    if (charCount > 0) {
-      counter.css({"color": "black"})
+
+  $('.new-tweet').on('input', 'textarea', function () {
+    var length = $(this).val().length;
+    var maxLength = 140;
+    var charCount = maxLength - length;
+
+    $(this).parent().find('.counter').html(charCount);
+
+    if (charCount < 0){
+      $(this).parent().find('.counter').css({ "color": "#ff0000"});
+    } else {
+      $(this).parent().find('.counter').css({ "color": ""});
     }
-    else {
-      counter.css({"color": "red"})
-    }
-  })
-})
+  });
+
+});

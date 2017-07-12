@@ -5,7 +5,6 @@
  */
 html {
   box-sizing: border-box;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -16,74 +15,20 @@ html {
  */
 
 body {
-  margin: 0;
   color: #244751;
   background-color: #eee;
-}
+  font-family: 'Roboto Condensed', sans-serif;
 
- .container {
-  margin: auto;
-  width: 450px;
-  align-items: center;
-  background-color: white;
-  padding: 140px 0 140px 0;
- }
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-#tweets:hover {
-  opacity: 1;
-}
 
-#tweets {
-  opacity: 0.8;
-  margin: 0 2em 0 2em;
-  background: white;
-  border-radius: 5px;
-  border: 1px solid;
-}
+ main {
+  padding: 140px 0 ;
+  background-color: white;
+  margin: 0 auto;
+  width: 450px;
 
-header {
-  background: #eee;
-  padding: 0.5em;
-  flex-wrap: wrap;
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
-}
-
-header div {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 83%;
-}
-
-header .profile-pic {
-  border-radius: 5px;
-  width: 50px;
-  height: 50px;
-}
-
-header .fullname {
-  font-size: 30px;
-  margin: 0;
-  font-weight: 600;
-}
-
-header .tweetr-name {
-  font-size: 15px;
-  margin: 0;
-  font-weight: 300;
-}
-
-article h3 {
-  padding: 5px 5px 5px 10px;
-  font-style: initial;
-  font-weight: 300;
-}
-
-.split {
-  padding: 0 0 0 8px;
-  font-weight: 200;
-}
+ }
