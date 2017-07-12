@@ -20,6 +20,14 @@ $(function() {
 
     $tweet.append($header).append($content).append($footer);
 
+    var $icons = $('<span>').addClass('action-icons');
+    $icons.append($('<i>').addClass('fa fa-flag').attr({'aria-hidden': true}));
+    $icons.append($('<i>').addClass('fa fa-retweet').attr({'aria-hidden': true}));
+    $icons.append($('<i>').addClass('fa fa-heart').attr({'aria-hidden': true}));
+
+    $footer.append($icons);
+
+
     return $tweet;
   }
 

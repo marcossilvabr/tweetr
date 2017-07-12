@@ -18,9 +18,10 @@
   color: #00a087;
   float: right;
   font-size: 120%;
-  line-height: 40px;
+  line-height: 50px;
   padding: 0 10px;
 }
+
 
 #nav-bar .button:hover {
   background-color: white;
