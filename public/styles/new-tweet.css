@@ -1,4 +1,4 @@
-.new-tweet{
+.new-tweet {
   background-color: #eee;
   border: solid rgba(0,0,0, 0.2) 1px;
   border-radius: 10px;
@@ -7,26 +7,26 @@
   display: none;
 }
 
-.new-tweet .char-exceeded{
+.new-tweet .char-exceeded {
   color: red;
 }
 
-.new-tweet .counter{
+.new-tweet .counter {
   float: right;
   padding: 0 5px;
 }
 
-.new-tweet .flash-message{
+.new-tweet .flash-message {
   color: red;
   margin-left: 10px;
 }
 
-.new-tweet h2{
+.new-tweet h2 {
   margin: 10px 0;
   border-bottom: solid 1px;
 }
 
-.new-tweet textarea{
+.new-tweet textarea {
   padding: 5px;
   width: 100%;
 }

@@ -1,31 +1,33 @@
-article.tweet{
-  border: solid rgba(0,0,0, 0.2) 1px;
+article.tweet {
+  border: solid lightgray 1px;
   border-radius: 11px 11px 10px 10px;
   border-top: none;
-  margin: 10px 2em;
+  margin: 20px 2em;
   padding: 0px;
+  opacity: 0.8;
 }
 
-article.tweet footer{
+article.tweet:hover {
+  border: solid gray 1px;
+  opacity: 1;
+}
+
+article.tweet:hover .action-icons {
+  display: inline;
+}
+
+article.tweet footer {
   border-top: solid #eee 1px;
   height: 40px;
 }
 
-article.tweet:hover{
-  border:solid gray 1px;
-}
-
-article.tweet .action-icons{
+article.tweet .action-icons {
   color: #00a087;
   float: right;
   letter-spacing: 6px;
   line-height: 40px;
   margin-right: 10px;
   display: none;
-}
-
-article.tweet:hover .action-icons{
-  display: inline;
 }
 
 article.tweet .avatar {
@@ -37,13 +39,13 @@ article.tweet .avatar {
   width: 80px;
 }
 
-article.tweet .content{
+article.tweet .content {
 
   overflow-wrap: break-word;
   padding: 0 10px;
 }
 
-article.tweet .handle{
+article.tweet .handle {
   color: gray;
   float: right;
   font-size: 80%;
@@ -51,35 +53,23 @@ article.tweet .handle{
   padding-right: 10px;
 }
 
-article.tweet header{
-  border: solid rgba(0,0,0, 0.2) 1px;
+article.tweet header {
   border-radius: 10px 10px 0 0;
   border-right: none;
   border-left:none;
   border-bottom: none;
   background-color: #eee;
   height: 100px;
-  opacity: 0.8;
 }
 
-article.tweet header:hover {
-  opacity: 1;
-}
-
-article.tweet .name{
+article.tweet .name {
   color: #244751;
   font-size: 150%;
   font-weight: bold;
   line-height: 80px;
-  opacity: 0.6;
 }
 
-article.tweet:hover .name{
-  opacity: 1;
-  color: #244751;
-}
-
-article.tweet .time-posted{
+article.tweet .time-posted {
   float: left;
   line-height: 40px;
   margin-left: 10px;
